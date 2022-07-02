@@ -79,6 +79,12 @@ div.container.pair {
 
 .quote.container {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-author {
+    align-self: flex-end;
 }
 
 .blue-container {
@@ -100,12 +106,20 @@ div.container.pair {
     align-items: center;
 }
 
-.header, .hero, .images, .quote, .call-to-action, .footer {
+.header, .footer {
     padding-left: 200px;
     padding-right: 200px;
     flex-grow: 1;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hero, .images, .quote, .call-to-action {
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .header > h1 {
